@@ -81,6 +81,10 @@ public class Main {
 				} else {
 					System.out.println("Esse livro não existe");
 				}
+			} else if (menuDevolverEmprestar == 3) {
+				System.out.println("Programa encerrado.");
+				sc.close();
+				return;
 			}
 			}
 			
@@ -127,7 +131,7 @@ public class Main {
 				System.out.println("Este livro esta indisponivel");
 				}
 			}
-		} while (menuConta != 3 || menuDevolverEmprestar != 2 || devolver != 6 || menuLivro != 6);
+		} while (menuConta != 3);
 		sc.close();
 	}
 
